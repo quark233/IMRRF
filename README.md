@@ -14,7 +14,8 @@ We refer to the steps in paper [Fact-Checking Complex Claims with Program-Guided
 ```bash
 python corpus_retrieve.py
 ```
-# Key Entity Based Knowledge Graph Retrieval
+# Key Entity Based Knowledge Graph Retrieval 
+You need to fill in your own API key in the api_key="OPENAI_SPI_KEY" in the ./utils/llm.py file
 Run the following command to retrieve relevant paths from the wikidata knowledge graph:
 ```bash
 python KG_search.py
@@ -34,6 +35,7 @@ Run the following command to have LLMS convert internal knowledge into additiona
 python generate_evidence.py
 ```
 # Claim Verification
+
 ```bash
 python execute.py
 ```
